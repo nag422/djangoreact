@@ -33,3 +33,20 @@ create drf swagger openapi and configure in root urls and in settings.py app dec
 
 VerifyEmail in views are conveted from generics.GenericViews to APIViews to implementing swagger token
 implementing swagger in ViriyEmail in .views.py and .serializers
+
+Serializers loginserializer implement tokens refresh and effected files are models,views,serializers
+
+###########Backend####################
+create backend app to track expenses of user 
+
+here model which is relation to user, serializers and views
+
+rest_framework generic classses to list view delete
+
+.models.py create Expense class with relations to user on_delete cascade
+
+in serializers create expensesserializer with required fields
+
+permissions.py isowner by extending BasePermission
+
+SWAGGER_SETTINGS update in settings.py

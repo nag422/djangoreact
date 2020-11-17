@@ -57,9 +57,9 @@ class LoginSerializer(serializers.ModelSerializer):
         #     detail = 'Please Continue your login using' + filtered_user_by_email[0].auth_provider
         # )
         if not user:
-            raise AutAuthenticationFailed('Invalid Credenitials, try again')
+            raise AuthenticationFailed('Invalid Credenitials, try again')
         if not user.is_active:
-            raise AutAuthenticationFailed('Account disabled, contact admin')
+            raise AuthenticationFailed('Account disabled, contact admin')
         if not user.is_verified:
             raise AuthentictionFailed('Email is not verified')
 

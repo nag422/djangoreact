@@ -43,6 +43,7 @@ urlpatterns = [
 
 urlpatterns += [
     path('admin/', admin.site.urls),
+    path('expenses/', include('backend.urls')),
     path('auth/', include('authentication.urls'))
 
 ]

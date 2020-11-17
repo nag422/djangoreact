@@ -1,0 +1,35 @@
+customize user by importing AbstractBaseUser, BaseUserManager,PermissionsMixin
+
+create user and speruser funcs in models and validation typeerrors
+
+then create user form fields in model its usable as a signup form
+
+in django model auto_now can edit every time but auto_now_add is cant edit everytime i.e in creation only once
+
+in settings.py add AUTH_USER_MODEL = 'authentication.User' to change authentication default model it becomes now default.
+
+in views create generic api view for user
+
+create serializers for user
+
+create RegisterSerializer
+
+add phone filed in models.py custom field yahoo i got it
+
+admin register the model User
+
+.env and settings.py implementing smtp email
+in views.py import simplejwt and user model to send email to user
+.Utils.py  staticmethod for sending email
+
+in python @staticmethod and @classmethod are there here in @classmethod
+we have to declare a class and call function
+
+a @staticmethod works like a function
+
+first serialize the request data and use its like objects
+
+create drf swagger openapi and configure in root urls and in settings.py app declaration order is import rest_framework,yswag,then native app
+
+VerifyEmail in views are conveted from generics.GenericViews to APIViews to implementing swagger token
+implementing swagger in ViriyEmail in .views.py and .serializers
